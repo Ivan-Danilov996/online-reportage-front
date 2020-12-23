@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar { width: 10px; margin-right: 10px}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #999;}
+::-webkit-resizer { background-color: #666;}
+
+.viget {
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 50px;
+    border-radius: 30px;
+    padding: 45px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.viget-body {
+    overflow-y: scroll;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.event {
+    margin: 15px 0;
+}
+
+.event.goal, .event.freekick {
+    position: relative;
+}
+
+.event.goal::after, .event.freekick::after {
+    content: '';
+    position: absolute;
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: -40px;
+}
+
+.event.goal::after {
+    background-image: url(cbe64af07200ffba9bbd3c71eaeb401b.png);
+}
+.event.freekick::after {
+    background-image: url(c8466570b0d3d30a306680adc7ffa025.png);
+}
+
+.date-time {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
