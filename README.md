@@ -1,0 +1,2 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/665i6u2423xmvk1h?svg=true)](https://ci.appveyor.com/project/Ivan-Danilov996/online-reportage-front)
+https://ivan-danilov996.github.io/online-reportage-front/
